@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .main {
+            background-color: #044f28;
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            height: 40px;
+
+
+
+        }
+
+        * {
+            margin: 0;
+        }
+
+        .navbar {
+
+            margin: 10px;
+            color: whitesmoke;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width:300px) {}
+
+        .nav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-evenly;
+            position: sticky;
+            top: 0;
+            height: 50px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .n1 {
+            margin: 10px;
+        }
+
+        .nav1 {
+            font-family: cursive;
+            height: 30px;
+
+            cursor: pointer;
+        }
+
+        .nav2 {
+            margin: 10px;
+            position: relative;
+            top: 7px;
+            color: #008060;
+            cursor: pointer;
+
+
+        }
+
+        .nav3 {
+            height: 27px;
+            width: 260px;
+            border-radius: 15px;
+
+        }
+
+        .nav4 {
+            height: 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .bkgimg {
+            background-image: url('./images/rainy.webp');
+            background-size: cover;
+            height: 550px;
+            cursor: pointer;
+
+        }
+
+        .bkg {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .bkgimg1 {
+            margin-top: 254px;
+            height: 70px;
+            width: 65px;
+            cursor: pointer;
+        }
+
+        .bkg1 {
+            margin-left: 700px;
+            margin-top: 150px;
+            /* height: 90px; */
+            /* width: 100px; */
+        }
+
+        .button {
+            height: 45px;
+            width: 135px;
+            background-color: green;
+            color: whitesmoke;
+            border-radius: 4px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .section {
+            background-color: #ffb503;
+            height: 100px;
+            /* margin-top: -16px; */
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .sec {
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+
+        }
+
+        .btn {
+            background-color: green;
+            border-radius: 6px;
+            margin-top: 33px;
+            height: 40px;
+            width: 190px;
+            cursor: pointer;
+        }
+
+        /* .circle{
+            
+        } */
+        .circleimg {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .circleimg1 {
+            /* justify-content: space-around; */
+            cursor: pointer;
+        }
+
+        .cirimg {
+            /* margin: 40px; */
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid pink;
+
+        }
+
+        .p {
+            margin-left: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .ybp {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 34px;
+        }
+
+        .bestimg {
+            height: 37px;
+        }
+
+        .ybp1 {
+            margin-left: 40px;
+
+        }
+
+        .sqr {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .sqrimg {
+            transition: 1s;
+        }
+
+        .sqrimg:hover {
+            transform: scale(1.05);
+        }
+
+        .sqrimgs {
+            height: 360px;
+            width: 330px;
+            cursor: pointer;
+            /* transition : 1s; */
+        }
+
+        /* .sqrimgs:hover{
+             /* transform: scale(1.1); 
+        } */
+        .pp {
+            text-align: center;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .product {
+            height: 400px;
+            width: 330px;
+            cursor: pointer;
+        }
+
+        .ppp {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+        }
+
+        /* .buy{
+            
+        } */
+        .star {
+            font-size: 30px;
+            color: yellow;
+        }
+
+        .line {
+            color: rgb(134, 124, 124);
+        }
+
+        .dash {
+            color: green;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 19px;
+        }
+
+        .vpbutn {
+            background-color: green;
+            color: whitesmoke;
+            height: 45px;
+            width: 330px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .va {
+            margin-top: 50px;
+            margin-left: 635px;
+
+        }
+
+        .vabutn {
+            background-color: green;
+            color: whitesmoke;
+            height: 45px;
+            width: 260px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .stl {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 33px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .stlimg {
+            background-image: url('./images/23.webp');
+            background-size: cover;
+            margin-top: -15px;
+            height: 550px;
+            cursor: pointer;
+
+        }
+
+        .seclast {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .secl {}
+
+        .img24 {
+            height: 900px;
+            width: 700px;
+        }
+
+        /* .back{
+            background-color: gray;
+
+        } */
+        .three {
+            /* background-color: gray; */
+            border-radius: 10px;
+            padding: 5px;
+            margin: 20px;
+
+        }
+
+        .staar {
+            font-size: 20px;
+            color: yellow;
+        }
+
+        .sale {
+            background-color: #ffb503;
+            color: green;
+            height: 27px;
+            width: 50px;
+            padding: 5px;
+            font-size: small;
+        }
+
+        .small {
+            background-color: white;
+            color: green;
+            border-radius: 5px;
+            padding: 12px;
+        }
+
+        .bin {
+            height: 40px;
+            width: 500px;
+            background-color: whitesmoke;
+            color: #008060;
+            border-radius: 5px;
+        }
+
+        .ltxt {
+            font-size: 19px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+        }
+
+        .foot {
+            width: 100%;
+            /* height: 500px; */
+            margin-top: 110px;
+              display: flex;
+        }
+
+        .col {
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            background-color: #ffb503;
+            transition: 1s;
+
+        }
+
+
+        .col:hover {
+            height: 13px;
+            width: 13px;
+            background-color: white;
+            margin: 7px;
+
+        }
+
+
+        .container-circle {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .color-circle {
+
+            height: 30px;
+            width: 30px;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 50%;
+            transition: 1s;
+
+        }
+
+        .color-circle:hover {
+            background-color: #ffb503;
+        }
+
+
+        .heading {
+            margin: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="navbar">Free Shipping above ₹499 | All India Delivery</div>
+        <div class="navbar">Explore Large Plants </div>
+        <div class="navbar">Organic Fertilisers to Boost Plant Growth Ugaoo</div>
+    </div>
+    <div class="nav" ">
+        <div class=" n1">
+        <img class="nav1" src="./images/ugaoo.png" alt="">
+        <!-- <span class="nav1">ugaoo</span> -->
+    </div>
+    <div class="n1">
+        <span class="nav2"> PLANTS</span>
+        <SPan class="nav2">SEEDS</SPan>
+        <SPan class="nav2">POTS & PLANTERS</SPan>
+        <SPan class="nav2">PLANT CARE</SPan>
+        <SPan class="nav2">GIFTING</SPan>
+        <SPan class="nav2">BLOG</SPan>
+        <SPan class="nav2">OFFERS</SPan>
+    </div>
+    <div class="n1">
+        <input class="nav3" type="text" name="" id="" placeholder=" Search for Plants,Seeds,Planters">
+    </div>
+    <div class="n1">
+        <img class="nav4" src="./images/rupee.png" alt="">
+        <img class="nav4" src="./images/contact.png" alt="">
+        <img class="nav4" src="./images/shopping.png" alt="">
+    </div>
+    </div>
+    <div class="bkgimg">
+        <div class="bkg">
+            <div><img class="bkgimg1" src="./images/greenarrowright.png" alt=""> </div>
+            <div> <img class="bkgimg1" src="./images/greenarrowleft.png" alt=""></div>
+        </div>
+        <div class="bkg1">
+            <button class="button"> SHOP NOW</button>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <div class="sec">
+            <p><b>Our very new shades of green.</p>
+            <p>Check out our latest sales and offers.</b></p>
+        </div>
+        <div class="sec">
+            <button class="btn">VIEW ALL OFFERS</button>
+        </div>
+    </div>
+
+    <div class="circle">
+        <div class="circleimg">
+            <div class="circleimg1">
+                <img class="cirimg" src="./images/1.avif" alt="">
+                <p class="p">Bestsellers</p>
+            </div>
+            <div class="circleimg1">
+                <img class="cirimg" src="./images/2.webp" alt="">
+                <p class="p">Easy to Care</p>
+            </div>
+            <div class="circleimg1">
+                <img class="cirimg" src="./images/3.avif" alt="">
+                <p class="p">XL Plants</p>
+            </div>
+            <div class="circleimg1">
+                <img class="cirimg" src="./images/4.webp" alt="">
+                <p class="p">Creamic Pots</p>
+            </div>
+            <div class="circleimg1">
+                <img class="cirimg" src="./images/5.webp" alt="">
+                <p class="p">Vegetable Seeds</p>
+            </div>
+            <div class="circleimg1">
+                <img class="cirimg" src="./images/6.webp" alt="">
+                <p class="p">Fertilisers</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <h1 class="heading">Your Best Picks </h1>
+
+    <div class="sqr">
+        <div class="sqrimg">
+            <img class="sqrimgs" src="./images/7.webp" alt="">
+            <p class="pp">Plants</p>
+        </div>
+        <div class="sqrimg">
+            <img class="sqrimgs" src="./images/8.webp" alt="">
+            <p class="pp">Seeds</p>
+        </div>
+        <div class="sqrimg">
+            <img class="sqrimgs" src="./images/9.webp" alt="">
+            <p class="pp">Pots & Planters</p>
+        </div>
+        <div class="sqrimg">
+            <img class="sqrimgs" src="./images/10.webp" alt="">
+            <p class="pp">Plant Care</p>
+        </div>
+    </div>
+
+
+    <div class="ybp">
+        <span class="ybp1"> <span><img class="bestimg" src="./images/bestseller.png" alt=""></span>Bestsellers</span>
+    </div>
+
+
+    <div class="sqr">
+        <div class="buy">
+            <img class="product" src="./images/11.webp" alt="">
+            <p class="ppp"> Peace Lily Plants</p>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <p><del class="line">$ 399</del> <span class="dash"> From $299 </span></p>
+            <button class="vpbutn">VIEW PRODUCT</button>
+
+        </div>
+        <div class="buy">
+            <img class="product" src="./images/12.webp" alt="">
+            <p class="ppp">Bamboo Palm Plant</p>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <p><del class="line">$ 499</del> <span class="dash"> From $399 </span></p>
+            <button class="vpbutn">VIEW PRODUCT</button>
+
+        </div>
+        <div class="buy">
+            <img class="product" src="./images/13.webp" alt="">
+            <p class="ppp">Jade Plant Mini</p>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <p><del class="line"> $ 299</del> <span class="dash"> From $249 </span></p>
+            <button class="vpbutn">VIEW PRODUCT</button>
+
+        </div>
+        <div class="buy">
+            <img class="product" src="./images/14.webp" alt="">
+            <p class="ppp">Monstera Deliciosa Plant</p>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <p><del class="line"> $ 1499</del> <span class="dash"> From $1,049 </span></p>
+            <button class="vpbutn">VIEW PRODUCT</button>
+
+        </div>
+    </div>
+    <div class="va">
+        <button class="vabutn">VIEW ALL</button>
+    </div>
+
+
+    <div class="ybp">
+        <span class="ybp1"> <span><img class="bestimg" src="./images/new arrivals.png">New Arrivals</span>
+    </div>
+
+
+    <div class="sqr">
+        <div class="buy">
+            <img class="product" src="./images/15.webp" alt="">
+            <p class="ppp"> Hex Coir Planter-Set of 2</p>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <p class="dash"> $1,799 </p>
+            <button class="vpbutn">SOLD OUT</button>
+
+        </div>
+        <div class="buy">
+            <img class="product" src="./images/16.webp" alt="">
+            <p class="ppp">Heart Coir Planter-Set of 2</p>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <p><del class="line">$ 2,399</del> <span class="dash"> $ 1,799 </span></p>
+            <button class="vpbutn">ADD TO CART</button>
+
+        </div>
+        <div class="buy">
+            <img class="product" src="./images/17.webp" alt="">
+            <p class="ppp">Tiny Kisses Creamic Planter</p>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <p><del class="line">$ 2,499</del> <span class="dash"> From $ 1,999 </span></p>
+            <button class="vpbutn">VIEW PRODUCT</button>
+
+        </div>
+        <div class="buy">
+            <img class="product" src="./images/18.webp" alt="">
+            <p class="ppp">Monstera Deliciosa Plant</p>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <p><del class="line">$ 1,499</del> <span class="dash"> From $1,049 </span></p>
+            <button class="vpbutn">VIEW PRODUCT</button>
+
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="sqr">
+        <div class="buy">
+            <img class="product" src="./images/19.webp" alt="">
+            <p class="ppp"> Fallen Angel Creamic Planter </p>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <p><del class="line">$ 999</del> <span class="dash"> From $749 </span></p>
+            <button class="vpbutn">VIEW PRODUCT</button>
+
+        </div>
+
+        <div class="buy">
+            <img class="product" src="./images/20.webp" alt="">
+            <p class="ppp"> Cats are Gods Creamic Planter</p>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <p><del class="line">$ 599</del> <span class="dash"> From $499 </span></p>
+            <button class="vpbutn">VIEW PRODUCT</button>
+
+        </div>
+        <div class="buy">
+            <img class="product" src="./images/21.webp" alt="">
+            <p class="ppp"> Wooden Plant Tray - Set Of 3</p>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <p><del class="line">$ 599</del> <span class="dash"> From $399</span></p>
+            <button class="vpbutn">VIEW PRODUCT</button>
+
+        </div>
+        <div class="buy">
+            <img class="product" src="./images/22.webp" alt="">
+            <p class="ppp"> Shade Net</p>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <p><del class="line">$ 599</del> <span class="dash"> From $499 </span></p>
+            <button class="vpbutn">VIEW PRODUCT</button>
+
+        </div>
+
+    </div>
+    <div class="va">
+        <button class="vabutn">VIEW ALL</button>
+    </div>
+
+
+
+    <p class="stl"> Shop The Look</p>
+    <div class="stlimg"></div>
+
+    <br><br><br>
+    <div class="seclast">
+        <div class="secl">
+            <img class="img24" src="./images/30.webp" alt="">
+        </div>
+
+        <div class="secl">
+            <p class="dotw" style="font-size: 26px; font-family: Arial, Helvetica, sans-serif; color: black;">Deal Of
+                The Week</p>
+            <h1 class="jpm" style="font-size: 35px; font-family: Arial, Helvetica, sans-serif; color: #044f28;">Jade
+                Plant Mini</h1>
+
+            <span class="staar">&starf;</span>
+            <span class="staar">&starf;</span>
+            <span class="staar">&starf;</span>
+            <span class="staar">&starf;</span>
+            <span class="staar">&starf;</span>
+            <p><del class="linee" style="color: gray;">₹ 299</del> <span class="dashh"
+                    style="font-size: 30px; color:#149253;"> ₹249 </span><span class="sale">SALE</span></p>
+            <p style="font-size: 20px;">Select Plant Size</p>
+            <button class="small"> Small</button>
+            <button class="small">Medium</button>
+            <h3 class="slp">Select Planter</h3>
+            <button class="small"> GroPot</button>
+            <button class="small">Krish</button>
+            <button class="small"> Atlantis</button>
+            <button class="small">Lagos</button>
+            <button class="small"> Diamond</button>
+            <button class="small">Spiro</button><br><br>
+            <button class="small"> Atlantis</button>
+            <button class="small">Lagos</button>
+            <button class="small"> Diamond</button>
+            <button class="small">Spiro</button>
+            <h3 class="slp">Color- <span class="ivory">Ivory</span></h3>
+
+            <div class="container-circle">
+
+
+                <div class="color-circle">
+                    <div class="col">
+                    </div>
+                </div>
+
+                <div class="color-circle">
+                    <div class="col" style="background-color: green;">
+                    </div>
+                </div>
+
+                <div class="color-circle">
+                    <div class="col">
+                    </div>
+                </div>
+
+                <div class="color-circle">
+                    <div class="col">
+                    </div>
+                </div>
+
+                <div class="color-circle">
+                    <div class="col">
+                    </div>
+                </div>
+
+                <div class="color-circle">
+                    <div class="col">
+                    </div>
+                </div>
+
+                <div class="color-circle">
+                    <div class="col">
+                    </div>
+                </div>
+
+                <div class="color-circle">
+                    <div class="col">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <!-- <span class="col" style="background-color: #e80da3;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="col" style="background-color: #ffb503;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="col" style="background-color: #ffb503;">&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
+
+
+            <p class="back"> <button class="three">-</button><span>1</span><button class="three">+</button> <button
+                    style="height: 40px; width: 368px; background-color: #008060;color: aliceblue;font-size: 15px; border-radius: 5px;">ADD
+                    TO CART</button></p>
+
+            <button class="bin">BUY IT NOW</button>
+
+            <p class="ltxt">Are you a sucker for succulents? The Crassula Green Mini <br> will be your dream
+                plant kid. One of the easiest houseplants <br> to look after, the Crassula Green Mini
+                boasts a lush foliage <br> which beautifies any room. Also considered lucky as per <br>
+                Feng Shui for its coin like round plump leaves, so go on, br- <br>ing some green
+                home, the luck just tags along for free.</p>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; ;">VIEW FULL DETAILS--></p>
+
+            <span style="margin: 10px;"><img style="height: 20px; margin: px;" src="./images/facebook.png" alt="f">
+            </span>
+            <span style="margin:9 px;">Share</span>
+            <span "><img style=" height: 20px;;" src="./images/twitter.png" alt="f"> </span>
+            <span style="margin: 15px;">Tweet</span>
+            <span><img style="height: 25px;" src="./images/pinterest.png" alt="f"> </span>
+            <span style="margin: 10px;">Pin it</span>
+            <span><img style="height: 25px;" src="./images/email.png" alt="f"> </span>
+            <span style="margin: 10px;">Email</span>
+            <p><img style="height: 25px;" src="./images/whatsapp.png" alt="f"><span
+                    style="margin: 10px;">Whatsapp</span> </p>
+
+
+
+        </div>
+    </div>
+    <footer class="foot" style="display: flex;">
+
+        <div class="footerr"
+            style="background-color: grey; margin-top: 100px;height: 300px; display: flex;justify-content: space-evenly;;">
+            <div class="foote">
+                <div class="wu" style="margin: 60px;">
+                    <h1>Why Ugaoo</h1>
+                </div>
+                <div class="foott">
+
+                    <img style="height: 60px;" src="./images/three.avif" alt="">
+                    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 19px; text-align: center;">Secure and
+                        Recyclable <br>
+                        Packaging</p>
+                </div>
+                <div class="foott">
+                    <img style="height: 60px;" src="./images/recycle.avif" alt="">
+                    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 19px;text-align: center;">Free
+                        Replacements if <br>
+                        Damaged</p>
+                </div>
+
+                <div class="foott">
+                    <img style="height: 60px;margin-left: -30px;" src="./images/recyclee.avif" alt="">
+                    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 19px;text-align: center;">
+                        Self-Watering Pots with <br>
+                        Every Plant</p>
+
+                </div>
+            </div>
+        </div>
+        <img style="height: 47px; position: fixed; bottom: 26px; left: 25px;" src="./images/whatsap.png" alt="">
+    </footer>
+</body>
+
+</html>
